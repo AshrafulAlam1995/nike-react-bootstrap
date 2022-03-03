@@ -10,38 +10,73 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
+<style>
+  .custom-header-background {
+    background-color: #FFF9F4;
+    ;
+  }
+
+  .custom-btn-background {
+    background-image: linear-gradient(to top right, cyan, blue, cyan, blue, cyan);
+  }
+
+  .hover-btn-background:hover {
+    background-image: linear-gradient(to bottom left, blue, cyan, blue, cyan, blue);
+    box-shadow: 0 0 20px cyan;
+  }
+</style>
 
 <body>
-  <header>
-    <h1>Welcome to Nike Corporation</h1>
-    <!-- a fency spnier -->
-    <section class="container">
-      <div class="spinner-border text-primary" role="status">
-        <span class="visually-hidden">Loading...</span>
-      </div>
-      <div class="spinner-border text-secondary" role="status">
-        <span class="visually-hidden">Loading...</span>
-      </div>
-      <div class="spinner-border text-success" role="status">
-        <span class="visually-hidden">Loading...</span>
-      </div>
-      <div class="spinner-border text-danger" role="status">
-        <span class="visually-hidden">Loading...</span>
-      </div>
-      <div class="spinner-border text-warning" role="status">
-        <span class="visually-hidden">Loading...</span>
-      </div>
-      <div class="spinner-border text-info" role="status">
-        <span class="visually-hidden">Loading...</span>
-      </div>
-      <div class="spinner-border text-light" role="status">
-        <span class="visually-hidden">Loading...</span>
-      </div>
-      <div class="spinner-border text-dark" role="status">
-        <span class="visually-hidden">Loading...</span>
+  <header class="container custom-header-background">
+    <!-- navigation manu -->
+    <section class="">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand px-2" href="#"><img src="icons/Logo.png" alt="" width="291" height="40"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item px-2">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link active" aria-current="page" href="#">Products</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link active" aria-current="page" href="#">About us</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link active" aria-current="page" href="#">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- intro section  -->
+    <section>
+      <div class="row my-5">
+        <div class="col-lg-6">
+          <img class="w-75 px-2 pb-5" src="images/Group 33092.png" alt="">
+        </div>
+        <div class="col-lg-6">
+          <div class="px-5 py-5">
+            <h1 class="fs-1"><span class="text-warning">NIKE REACT</span><br><span>INFINITY RUN 2</span></h1>
+            <p class="fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, corporis!</p>
+            <button class="btn custom-btn-background hover-btn-background text-white rounded"><img class="w-25"
+                src="icons/shopping-cart 1.png" alt="">Buy
+              Now</button>
+          </div>
+
+        </div>
       </div>
     </section>
   </header>
+  <!-- header part ends -->
   <main>
 
   </main>
